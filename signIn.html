@@ -8,17 +8,32 @@
 </head>
 <body>
     <script src="js/signIn.js"></script>
-    <div class="form-container">
-        <form action="" class="sign-in-form">
-            <h2 class="title">Sign In</h2>
-            <div class="input-field">
-                <input type="text" placeholder="Username" />
+    <div class="container">
+        <div class="form-container">
+            <div class="signin">
+                <form action="" class="sign-in-form">
+                <h2 class="title">Sign In</h2>
+                <div class="input-field">
+                    <input type="text" placeholder="Username" />
+                </div>
+                <div class="input-field">
+                    <input type="password" placeholder="Password" />
+                </div>
+                <input type="submit" value="Sign In" class="btn" />
+            </form>
             </div>
-            <div class="input-field">
-                <input type="password" placeholder="Password" />
+        </div>
+        
+        <div class="panel-container">
+            <div class="panel left-panel">
+                <div class="content">
+                    <h3>First Time?</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt debitis perferendis, at nostrum deleniti exercitationem.</p>
+                    <button class="btn transparent" id="sign-up-btn">Sign Up</button>
+                </div>
+                <img src="img/signIn.svg" class="image" alt="">
             </div>
-            <input type="submit" value="Login" class="btn" />
-        </form>
+        </div>
     </div>
 </body>
 </html>
