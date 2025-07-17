@@ -1,11 +1,14 @@
-function handleSignInButtonClick() {
-    username = document.getElementById("username").value;
-    password = document.getElementById("username").value;
+function handleShowPassword() {
+    let checkBox = document.getElementById("show-password");
+    let passwordField = document.getElementById("password");
+    
+    if (checkBox.checked) {
+        passwordField.type = "text";
+    } else {
+        passwordField.type = "password";
+    }
+}
 
-    if (username.length == 0 || password.length < 8) {
-        alert("Please enter valid credentials");
-    }
-    else {
-        alert("You have logged in....")
-    }
+function handleFormReset() {
+    document.querySelector("form").reset();
 }

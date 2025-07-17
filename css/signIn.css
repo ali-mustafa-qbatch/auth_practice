@@ -6,7 +6,7 @@ body {
   position: relative;
   width: 100%;
   background-color: #fff;
-  min-height: 100vh;
+  min-height: 98vh;
   overflow: hidden;
 }
 
@@ -16,7 +16,6 @@ body {
   transform: translate(-50%, -50%);
   left: 75%;
   width: 50%;
-  transition: 1s 0.7s ease-in-out;
   display: grid;
   grid-template-columns: 1fr;
   z-index: 5;
@@ -72,11 +71,18 @@ form.sign-in-form {
   font-weight: 600;
   font-size: 1.1rem;
   color: #333;
+  padding: 15px;
 }
 
 .input-field input::placeholder {
   color: #aaa;
   font-weight: 500;
+}
+
+.show-pass {
+  max-width: 380px;
+  width: 100%;
+  color: #aaa;
 }
 
 .btn {
@@ -96,6 +102,30 @@ form.sign-in-form {
 
 .btn:hover {
   background-color: #4d84e2;
+}
+
+.form-btns {
+  display: flex;
+  max-width: 380px;
+  width: 100%;
+  align-items: center;
+  margin-top: 5px;
+}
+
+#clear-btn {
+  width: 50%;
+  margin: 5px;
+  background-color: black;
+  opacity: 80%;
+}
+
+#clear-btn:hover {
+  opacity: 60%;
+}
+
+#submit-btn {
+  width: 50%;
+  margin: 5px;
 }
 
 .panel-container {
