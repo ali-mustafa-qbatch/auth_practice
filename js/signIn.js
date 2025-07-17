@@ -1,6 +1,6 @@
 function handleShowPassword() {
-    let checkBox = document.getElementById("show-password");
-    let passwordField = document.getElementById("password");
+    const checkBox = document.getElementById("show-password");
+    const passwordField = document.getElementById("password");
     
     if (checkBox.checked) {
         passwordField.type = "text";
@@ -10,5 +10,6 @@ function handleShowPassword() {
 }
 
 function handleFormReset() {
-    document.querySelector("form").reset();
+    const signInForm = document.querySelector("form");
+    signInForm.reset();
 }
